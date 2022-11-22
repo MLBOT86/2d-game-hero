@@ -309,7 +309,7 @@ const jumpHandler = () => {
 
 let onTouchStart = (event) => {
    y = (event.type === 'mousedown') ? y = event.screenY : y = event.touches[0].screenY;
-   if (y > 700) {
+   
 
       clearInterval(timer);
       x = (event.type === 'mousedown') ? x = event.screenX : x = event.touches[0].screenX;
@@ -323,7 +323,7 @@ let onTouchStart = (event) => {
             lefttHandler();
          }
       }, 130);
-   }
+   
 
 }
 let onTouchEnd = (event) => {
